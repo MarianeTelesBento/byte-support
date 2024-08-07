@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    z-index: 10;
+    z-index: 99;
     position: fixed;
     display: flex;
     justify-content: space-around;
@@ -45,9 +45,11 @@ p{
     font-size: 16px;
 }
 
+.home{
+    min-height: 100vh;
+}
 
 .home, .servicos-text{
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -89,6 +91,10 @@ p{
 .servicos{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 20px;
+    gap: 50px;
     text-align: center;
 }
 
@@ -105,6 +111,7 @@ p{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
+    gap: 100px;
 }
 
 .servicos-card1{
@@ -157,4 +164,33 @@ footer{
 table, th, td {
     border: 1px solid rgb(75, 73, 73);
     padding: 3px;
-  }
+}
+
+@media (max-width: 768px) {
+    *{
+        text-align: center;
+    }
+    .home, .servicos-text{
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .servicos-card{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+
+    .servicos-text div img{
+        width: 200px;
+        height: 200px;
+        border-radius: 1000px;
+    }
+    
+    .servicos-text-img{
+        width: 100%;
+        height: auto;
+    }
+
+}
