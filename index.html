@@ -3,77 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="imagens/logo.png" type="image/x-icon">
     <title>Byte Support</title>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="imagens/logo.png" alt=""></a>
-        <ul class="nav-lista">
-            <li><a href="#home" class="nav-item">Home</a></li>
-            <li><a href="#servicos" class="nav-item">Serviços</a></li>
-            <li><a href="#história" class="nav-item">História</a></li>
-            <li><a href="" class="nav-item">...</a></li>
-        </ul>
+        <nav class="nav">
+            <a href="index.html" class="nav-logo">
+                <img src="imagens/logo.png" alt="logo do site" class="nav-logo-img">
+                <span>Byte Support</span>
+            </a>
+            <ul class="nav-menu-lista">
+                <li><a href="#home" class="nav-menu-item">Home</a></li>
+                <li><a href="#planetas" class="nav-menu-item">Planetas</a></li>
+                <li><a href="#astronautas" class="nav-menu-item">Astronautas</a></li>
+                <li><a href="#satelites" class="nav-menu-item">Astronautas</a></li>
+            </ul>
+            <div class="nav-menu-bar">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section class="home" id="home">
             <div class="home-text">
+                <h4>Confiabilidade em cada reparo, ética em cada interação</h4>
                 <h1>Byte Support</h1>
-                <h2>Confiabilidade em cada reparo, ética em cada interação</h2>
                 <p>A nossa empresa foi criada em prol do amor a tecnologia, manutenção de computadores e visão de lucros, voltados especificamente a área de hardware.</p>
-                <a href="#servicos">Clique e saiba mais</a>
             </div>
             <div class="home-img">
-                <img src="imagens/Imagem-principal.jpg" alt="">
+                <img src="imagens/Imagem-principal.jpg" alt="homem ligando placa de video">
             </div>
         </section>
-        <section class="servicos">
-            <div class="servicos-img"  id="servicos">
+        <section class="conteudo2" id="planetas">
+            <div class="resumo-texto" >
                 <h2>Nossos serviços</h2>
-                <div class="servicos-card">
-                    <div class="servicos-card1">
-                        <img src="imagens/manutencao.jpg" alt="">
-                        <h3>Suporte Personalizado</h3>
-                    </div>
-                    <div class="servicos-card1">
-                        <img src="imagens/atendimento.jpg" alt="">
-                        <h3>Atendimento empresarial e pessoal</h3>
-                    </div>
-                    <div class="servicos-card1">
-                        <img src="imagens/sustentabilidade.jpg" alt="">
-                        <h3>Promoção da sustentabilidade</h3>
-                    </div>
-                </div>
+                <p id="resumo-planeta">Explore o Sistema Solar: dos escaldantes desertos de Mercúrio aos gelados ventos de Netuno, cada planeta oferece mistérios e maravilhas únicas.</p>
             </div>
-            <div class="servicos-text"  id="história">
-                <div class="servicos-text-text">
-                    <h2>Nosso Negócio</h2>
+            <div class="carrossel">
+                <a class="prev">
+                        <span>&#10094;</span>
+                        <span class="prev-text">Voltar</span>
+                </a>
+                <div>
+                        <div class="slides fade">
+                            <h2 class="title">Suporte Personalizado</h2>
+                            <img src="imagens/manutencao.jpg" alt="planeta"/>
+                            <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, magnam iste doloribus officiis, eos fuga molestiae non.</p>
+                        </div>
+                        <div class="slides fade">
+                            <h2 class="title">Atendimento empresarial e pessoal</h2>
+                            <img src="imagens/atendimento.jpg" alt="planeta"/>
+                            <p class="content">Similar à Terra em tamanho, tem uma atmosfera densa e temperaturas altas.</p>
+                        </div>
+                        <div class="slides fade">
+                            <h2 class="title">Promoção da sustentabilidade</h2>
+                            <img src="imagens/sustentabilidade.jpg" alt="planeta"/>
+                            <p class="content">Único planeta conhecido com vida, possui atmosfera rica em oxigênio e vastos oceanos.</p>
+                        </div>
+                </div>
+                <div class="footer-carrossel">
+                    <button class="btn-slide">&#10095;</button>
+                    <div class="dot-box">
+                      <span class="dot" ></span>
+                      <span class="dot" ></span>
+                      <span class="dot" ></span>
+                    </div>
+            </div>
+        </section>
+        <section class="conteudo3" id="astronautas">
+            <div class="resumo-texto" >
+                <div class="astro">
+                    <img src="imagens/manutencao-principal.jpg" alt="arrumando notebook">
+                    <h3>Nosso negócio</h3>
                     <p>Nosso objetivo é fornecer serviços de manutenção de computadores confiáveis ​​e de alta qualidade para clientes empresariais e pessoais. Nosso foco é garantir sistemas computacionais eficientes e seguros, oferecer soluções customizadas, atendimento ágil e eficaz e promover a sustentabilidade por meio de práticas conscientes. Nossa missão é ser a escolha preferencial para necessidades de manutenção de informática, sempre pautada pela ética, transparência e compromisso com a satisfação do cliente.</p>
                 </div>
-                <div class="servicos-text-img">
-                    <img src="imagens/manutencao-principal.jpg" alt="">
-                </div>
+            </div>
+        </section>
+
+        <section class="conteudo4" id="satelites">
+            <div>
+                <h3>Nossos contatos</h3>
+                <table>
+                    <tr>
+                        <td>Telefone</td>
+                        <td>Email</td>
+                        <td>Endereço</td>
+                    </tr>
+                    <tr>
+                        <td>(11)98879-0448</td>
+                        <td>bytesupportit@gmail.com</td>
+                        <td>Rua. Apucarana, 1270 - Tatuapé, São Paulo</td>
+                    </tr>
+                </table>
             </div>
         </section>
     </main>
-
-    <footer>
-        <h2>Nossos contatos</h2>
-        <table>
-            <tr>
-                <td>Telefone</td>
-                <td>Email</td>
-                <td>Endereço</td>
-            </tr>
-            <tr>
-                <td>(11)988790448</td>
-                <td>bytesupportit@gmail.com</td>
-                <td>Rua. Apucarana, 1270 - Tatuapé, São Paulo</td>
-            </tr>
-        </table>
+    
+    <footer class="footer-pg">
+        <h2>Contratos</h2>
+        <ul>
+            <a href=""><li>Contrato Social</li></a>
+            <a href=""><li>Contrato de Prestação de serviços</li></a>
+        </ul>
     </footer>
+    <script src="script/script.js"></script>
 </body>
 </html>
